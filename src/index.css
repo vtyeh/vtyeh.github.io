@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", "Helvetica Neue", sans-serif;
+  background-color: #e2e4de;
+  color: #434341;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+.fancy-font {
+  font-family: "Playfair Display", "Helvetica Neue", sans-serif;
+  font-size: 3em;
+}
+
+#main,
+#about,
+#projects,
+#poetry {
+  padding: 5em;
+  height: 750px;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+}
+
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 8em;
+  height: 600px;
+}
+
+#about > img {
+  height: 400px;
+  border-radius: 300px;
+  margin: 2em;
+}
+
+#poetry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  width: 10em;
+  font-size: 1.5em;
+}
+
+.line {
+  width: 3em;
+  height: 1px;
+  background-color: #434341;
+  border: none;
+  transform: translateY(0.2em);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.7em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #434341;
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20em;
+}
+/* 
+.navbarLinks > a {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbarLinks > a:hover {
+  transform: scaleY(1.2);
+} */
+
+.chinese {
+  display: flex;
+  flex-direction: column;
+}
+
+#poetryPage {
+  border: 1px solid #434341;
+  width: 40em;
+  height: 40em;
+  padding: 4em 0 0 4em;
+}
+
+.linkButton {
+  text-decoration: none;
+  border: 1px solid #434341;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  color: #434341;
+}
+
+.linkButton:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.contactLinks {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  left: 1em;
+  height: 100%;
+  width: 25px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: translateY(50%);
+}
+
+.socialIcon {
+  width: 20px;
+  margin: 0.5em 0 0.5em 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialIcon:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  padding: 1em;
+}
