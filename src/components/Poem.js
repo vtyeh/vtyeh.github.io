@@ -2,11 +2,14 @@ export default function Poem({ poem }) {
   return (
     <>
       {poem &&
-        poem.map((stanza) => {
+        poem.map((stanza, index) => {
           return (
-            <p>
-              {stanza.stanza.map((line) => (
-                <div>{line}</div>
+            <p key={index}>
+              {stanza.stanza.map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>
               ))}
             </p>
           );

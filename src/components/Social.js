@@ -29,8 +29,8 @@ const social_list = [
 export default function Social() {
   return (
     <div className={"contactLinks"}>
-      {social_list.map((social) => (
-        <a href={social.link} target="_blank" rel="noreferrer">
+      {social_list.map((social, index) => (
+        <a key={index} href={social.link} target="_blank" rel="noreferrer">
           <img
             src={social.icon}
             alt={social.altName}
