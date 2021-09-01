@@ -81,18 +81,31 @@ body {
   color: #434341;
 }
 
+.navbar button {
+  border: none;
+  background-color: transparent;
+  font-family: "Quicksand", "Helvetica Neue", sans-serif;
+  color: #434341;
+  font-size: 1em;
+  padding: none;
+}
+
+.navbar button:hover {
+  cursor: pointer;
+}
+
 .navbarLinks {
   display: flex;
   justify-content: space-evenly;
   width: 20em;
 }
-/* 
-.navbarLinks > a {
-  transition: all 0.2s ease-in-out;
+
+.navbarLinks button {
+  transform: translateY(-1em);
 }
 
-.navbarLinks > a:hover {
-  transform: scaleY(1.2);
+/* .navbarLinks button.active {
+  text-decoration: underline;
 } */
 
 .chinese {

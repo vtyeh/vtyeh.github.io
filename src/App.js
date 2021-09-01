@@ -1,14 +1,14 @@
 import Home from "./components/Home";
-import { BrowserRouter } from "react-router-dom";
-import { Route } from "react-router";
+// import { BrowserRouter } from "react-router-dom";
+// import { Route } from "react-router";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Home />
+      {/* <BrowserRouter>
         <Route path="/" component={Home} />
-        {/* <div id={"main"}>venessa yeh</div> */}
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

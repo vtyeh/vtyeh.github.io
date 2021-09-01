@@ -1,19 +1,48 @@
-import { HashLink as Link } from "react-router-hash-link";
+import { useState } from "react";
 
-export default function NavBar() {
+export default function NavBar(currentSection) {
+  const [active, setActive] = useState(null);
+
+  function scrollSmoothTo(elementId) {
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      setActive(elementId);
+      element.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+    }
+  }
+
   return (
     <div className="navbar">
-      <Link to="/#main">
+      <button onClick={() => scrollSmoothTo("main")}>
         <div className={"chinese"}>
           <span>葉</span>
           <span>香</span>
           <span>儀</span>
         </div>
-      </Link>
+      </button>
       <div className={"navbarLinks"}>
-        <Link to="/#about">about me</Link>
-        <Link to="/#projects">projects</Link>
-        <Link to="/#poetry">poetry</Link>
+        <button
+          className={active === "about" ? "active" : ""}
+          onClick={() => scrollSmoothTo("about")}
+        >
+          about me
+        </button>
+        <button
+          className={active === "projects" ? "active" : ""}
+          onClick={() => scrollSmoothTo("projects")}
+        >
+          projects
+        </button>
+        <button
+          className={active === "poetry" ? "active" : ""}
+          onClick={() => scrollSmoothTo("poetry")}
+        >
+          poetry
+        </button>
       </div>
     </div>
   );
