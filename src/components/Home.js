@@ -18,14 +18,14 @@ export default function Home() {
       <section id={"main"}>
         <div>
           <SectionTitle title={"venessa tai yeh"} />
-          <div className={"fancy-font"} style={{ width: "13em" }}>
+          <div className={"fancy-font"}>
             full stack developer + poet based in southern california.
           </div>
         </div>
       </section>
       <section id={"about"}>
-        <img src={thisMe} alt={"me in foster city"} />
-        <div style={{ width: "50%" }}>
+        <img src={thisMe} alt={"portrait of me"} />
+        <div className={"paragraph-text"}>
           <SectionTitle title={"about me"} />
           <Paragraph text={textJSON.about_me} />
         </div>
@@ -36,10 +36,10 @@ export default function Home() {
       </section>
       <section id={"poetry"}>
         <div>
-          <div className={"fancy-font"} style={{ width: "75%" }}>
+          <div className={"fancy-font"}>
             Enjoy your coffee break with some poetry.
           </div>
-          <p>
+          <p style={{ marginBottom: "5em" }}>
             <a
               className={"linkButton"}
               href="https://venessa-tai-yeh.medium.com/"
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
       <footer>
         created with figma, react, and github pages. icons from freepik and
-        pixelmeetup. © venessa yeh 2021
+        pixelmeetup. © venessa tai yeh 2024
       </footer>
     </div>
   );
