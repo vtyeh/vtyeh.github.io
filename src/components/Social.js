@@ -17,12 +17,12 @@ const social_list = [
   {
     icon: mediumIcon,
     altName: "medium",
-    link: "https://venessa-yeh.medium.com/",
+    link: "https://venessa-tai-yeh.medium.com/",
   },
   {
     icon: instagramIcon,
     altName: "instagram",
-    link: "https://www.instagram.com/yay_yeh/",
+    link: "https://www.instagram.com/momopo.etry/",
   },
 ];
 

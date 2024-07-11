@@ -8,7 +8,7 @@ import Poem from "./Poem";
 
 import textJSON from "../text/text.json";
 import poemsJSON from "../text/poems.json";
-import thisMe from "../images/me.JPG";
+import thisMe from "../images/me.jpg";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Social />
       <section id={"main"}>
         <div>
-          <SectionTitle title={"venessa yeh"} />
+          <SectionTitle title={"venessa tai yeh"} />
           <div className={"fancy-font"} style={{ width: "13em" }}>
             full stack developer + poet based in southern california.
           </div>
@@ -40,7 +40,12 @@ export default function Home() {
             Enjoy your coffee break with some poetry.
           </div>
           <p>
-            <a className={"linkButton"} href="https://medium.com/@venessa-yeh">
+            <a
+              className={"linkButton"}
+              href="https://venessa-tai-yeh.medium.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               read more on medium
             </a>
           </p>
