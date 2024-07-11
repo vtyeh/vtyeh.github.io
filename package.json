@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vtyeh.github.io/me",
+  "homepage": "https://vtyeh.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
