@@ -8,7 +8,7 @@ import Poem from "./Poem";
 
 import textJSON from "../text/text.json";
 import poemsJSON from "../text/poems.json";
-import thisMe from "../images/me.jpg";
+import thisMe from "../images/me.JPG";
 
 export default function Home() {
   return (
