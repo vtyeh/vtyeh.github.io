@@ -193,11 +193,6 @@ footer {
     width: 90%;
   }
 
-  #about > img {
-    width: 80%;
-    height: 80%;
-  }
-
   #poetryPage {
     border: 1px solid #434341;
     width: 90%;
@@ -207,4 +202,8 @@ footer {
 }
 
 /* for mobile */
-/* @media screen and (max-width: 450px) {} */
+@media screen and (max-width: 500px) {
+  #about > img {
+    transform: scale(0.75);
+  }
+}
