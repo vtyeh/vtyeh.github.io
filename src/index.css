@@ -165,7 +165,7 @@ footer {
   padding: 1em;
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 950px) {
   #main,
   #about,
   #projects,
@@ -195,7 +195,7 @@ footer {
 
   #about > img {
     width: 80%;
-    height: auto;
+    height: 80%;
   }
 
   #poetryPage {
