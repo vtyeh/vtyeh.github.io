@@ -11,7 +11,7 @@ import poemsJSON from "../text/poems.json";
 import thisMe from "../images/me.JPG";
 
 export default function Home() {
-  const today = new Date();
+  const currentYear = new Date().getFullYear();
   return (
     <div>
       <NavBar />
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
       <footer>
         created with figma, react, and github pages. icons from freepik and
-        pixelmeetup. © venessa tai yeh {today.getFullYear()}
+        pixelmeetup. © venessa tai yeh {currentYear}
       </footer>
     </div>
   );
